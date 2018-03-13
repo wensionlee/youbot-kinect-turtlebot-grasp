@@ -1,0 +1,22 @@
+sudo bash
+
+密码：wensionlee
+
+ssh youbot@192.168.1.101
+
+roslaunch youbot_driver_ros_interface youbot_driver.launch
+
+
+source ~/youbot_torque/devel/setup.bash 
+roslaunch torque_example torque_example.launch
+
+
+
+ctl+alt+t新建一个窗口
+cd youbot_torque/devel/lib/torque_example
+./gwd_traj
+
+
+
+ltr.cpp 是youbot视觉抓取   linux_new_ltr3.cpp turtlrbot通信放置
+直接这个包里的roslaunch moveit_youbot_config demo.launch就可以运行仿真程序
